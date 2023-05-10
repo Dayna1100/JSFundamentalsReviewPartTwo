@@ -169,8 +169,22 @@
     ...
 
 */
-const studentsArray = ["Annmarie", "Craig", "Ashley", "Joyce", "Deb", "Gabriel", "Kimmy", "Matt", "James", "Nicole", "Todd"]
+//  works but check to see if colon is correct below?????
+// const studentsArray = ["Annmarie", "Craig", "Ashley", "Joyce", "Deb", "Gabriel", "Kimmy", "Matt", "James", "Nicole", "Todd"]
 
-studentsArray.forEach(function(a, index) {
-    console.log(studentsArray);
-});
+// studentsArray.forEach(function (item, index) {
+//     console.log(index, ":" , item);
+// });
+
+// 11.  Using the the map Array method square every number in the following array and save 
+//      the results to a new array called numbersSquaredArray.
+
+// const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// const numbersSquaredArray = numbersArray.map(x => x*x);
+
+// console.log(numbersSquaredArray);
+
+// 12.  Using a looping method of your choice, loop over and sum all the values the 
+//      new numbersSqauredArray storing the sum in a variable named arraySum. Print 
+//      arraySum to the console.   left off here!!!!!
