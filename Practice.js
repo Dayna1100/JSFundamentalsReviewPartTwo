@@ -91,7 +91,86 @@
 // 1.   What are two ways you can create an array in JavaScript?
 // array literal - const arrayName = [one, two, three];
 // array constructor "Array()"- const arrayName = new Array("one", "two", "three");
+//  other way to create array: let values = Array.of("one", "two", "three");
 
-// 2.   How can we we tell if a variable is holding an array?   left off here 5/9 (note: did nt rewatch vids here)
+// 2.   How can we we tell if a variable is holding an array?   
+//      Use: isArray(variableName) method to check if a variable is an array. it will return true if so or false if not
 // 3.   What data type is returned from an array with the typeof?
+//      The typeof operator returns " object " for arrays because in JavaScript arrays are objects.
 // 4.   What is an index in the context of an array?
+//      it is the location/position of each element in an array. Arrays start at index zero.
+
+// 5.   Given the following array, const carMakes = ["Honda", "Toyota", "Mazda"]
+
+//      On a separate line use a built-in array method to add "Mercedes" to the end of the array (push)
+//      On a separate line use a built-in array method to add "BMW" to the beginning of the array (unshift)
+//      Print "Toyota" to the console accessing it by it's index  (is now index 2 because we aded one in front)
+
+// const carMakes = ["Honda", "Toyota", "Mazda"];
+// carMakes.push("Mercedes");
+// carMakes.unshift("BMW");
+
+// console.log(carMakes[2]);
+
+// 6.   Using a built-in array method, create a new array from the first 3 values in the carMakes 
+//      array and store it in a new variable. Your new array should contain the values ["BMW", "Honda", 
+//      "Toyota"]   - found that this is accomplished by using the slice method!!
+
+// const carMakes = ["BMW", "Honda", "Toyota", "Mazda", "Mercedes"];
+// const carNewMakes = carMakes.slice(0,3)
+
+// console.log(carNewMakes);
+
+// 7.    Using built-in Array Methods and working with this array: const ericInfo = ["Eric", "Senior Instructor", "Florida"];
+
+//      Remove "Eric" from the ericInfo array
+//      Update "Florida" to "South Carolina"
+//      Add "Schwartz" to the end of the array
+//      The final array should look like this: ["Senior Instructor", "South Carolina", "Schwartz"]
+//      Please feel free to look up array methods that you can use to accomplish the transformation 
+//      above.
+
+// const ericInfo = ["Eric", "Senior Instructor", "Florida"];
+//  ericInfo.splice(0,1);  // removes eric from the array - or removes first element, one time
+//  ericInfo[1] = "South Carolina";   // replaces FLorida with South Carolina  in index position 2
+//  ericInfo.push("Schwartz");  // push adds element to end of array
+// console.log(ericInfo);
+
+// 8.   Print "apple" from each of the arrays below to the console
+
+// const fruits1 = ["apple", "pear", "strawberry", "grape"];
+// const fruits2 = [
+//   ["strawberry", "grape"],
+//   ["rambutan", "durian"],
+//   ["orange", "apple"]
+// ];
+// const fruits3 = [
+//   ["strawberry", ["pineapple"]],
+//   ["grape", ["pear", ["apple"], "kiwi"]]
+// ];
+
+// console.log(fruits1[0]);
+// console.log(fruits2[2][1]);
+// console.log(fruits3[1][1][1][0]);
+
+// 9.   Loop through the following array with a for() or while() loop printing each name to the console.
+// const studentsArray = ["Annmarie", "Craig", "Ashley", "Joyce", "Deb", "Gabriel", "Kimmy", "Matt", "James", "Nicole", "Todd"]
+// for (let i = 0; i < studentsArray.length; i++)
+
+// console.log (studentsArray[i]);
+
+// 10.  Loop through the following array with the forEach() Array method printing each name and 
+//      the names index to the console.
+/*
+    Example Output:
+
+    0: Ashley
+    1: Craig
+    ...
+
+*/
+const studentsArray = ["Annmarie", "Craig", "Ashley", "Joyce", "Deb", "Gabriel", "Kimmy", "Matt", "James", "Nicole", "Todd"]
+
+studentsArray.forEach(function(a, index) {
+    console.log(studentsArray);
+});
