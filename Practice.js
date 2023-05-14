@@ -435,3 +435,216 @@
 //      -Using JavaScript, update the button element to have the text, "Click Me".
 //      -Using JavaScript, update the button element to have white text and a black background.
 
+// let submit = document.getElementById('submit');
+// submit.innerText = 'Click Me';
+// submit.style.color = 'white';
+// submit.style.backgroundColor = 'black';
+//   console.log(submit);  //comment this out for the next part
+
+// 6. Add an event listener to the button you created that responds to a click event. Print 
+//    something to the console so you know that something happens when the button is clicked 
+//    and your event listener is working.
+
+// submit.addEventListener('click', () => {  //remember to uncomment lines 438 to 441 before saving to test
+//     console.log('Submit button clicked!');
+// });
+
+// 7. Add a span HTML element to the <body> of index.html after the button and give the new span
+//    an id attribute with a value counter. Use a 0 as the contents of your span.
+
+//    -Using JavaScript, get a reference to the span element using it's id and store it in a variable. 
+//    Print the value of the variable to the console to verify that you were able to get a reference 
+//    to the expected element.
+//    -Update the event listener for the button to increase the 0 in the span by one every time the 
+//    button is clicked.
+
+// let counter = document.getElementById('counter');  // to see counter value
+// console.log(counter);         // to see counter value
+
+
+// let counter = document.getElementById('counter');
+// let count = 0;
+
+// submit.addEventListener('click', () => {
+//   count++;
+//   counter.innerText = count;
+// });       // no need for console.log here - the count will show inc every time the button is clicked in the counter.
+
+// 8. Add a new event listener to the button you created that responds to a right-click event (the actual 
+//    event is called something else). Print something to the console so you know that something happens when 
+//    the button is right-clicked and your event listener is working.
+
+//    -Be sure to use event.preventDefault(); near the top of the event listener.
+//    -What behavior did adding event.preventDefault(); change?  - It prevents the event from happening - here it was a click
+//    but still lets the message print to the console.
+//    -Update the new event listener for the button to decrease the number in the span by one every time 
+//    the button is clicked.
+
+// submit.addEventListener('click', (event) => {   //event listener with preventDefault
+//   event.preventDefault();
+//   console.log('Button right-clicked!');
+// });
+
+// submit.addEventListener('click', () => {   // event listener with decreasing count number displayed
+//  count--;
+//   counter.innerText = count;
+// });
+
+
+// 9. Given the following function that returns a random color from an array, change the background 
+//  color of the HTML document every time the button is clicked or right-clicked.
+
+// function randomColor() {
+//   const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+  
+//   let randomIndex = Math.floor(Math.random() * ((colors.length - 1) - 0 + 1) + 0)
+  
+//   return colors[randomIndex]
+// }  // Remember to comment out lines 497 to 502 as they are duplicated below!!!!!***********
+//--------------------------------------------------------------------------------------
+// Select the button element
+// const button = document.querySelector('button');
+// button.style.color = 'white';
+// button.style.backgroundColor = 'grey'
+// button.style.width = '150px';
+// button.style.height = '50px';
+// submit.innerText = 'Click Me';
+
+// // Add an event listener for the click event
+// button.addEventListener('click', changeBackgroundColor);
+
+// // Add an event listener for the contextmenu event (right-click)
+// button.addEventListener('contextmenu', changeBackgroundColor);
+
+// // Function to change the background color
+// function changeBackgroundColor() {
+//   const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+//   let randomIndex = Math.floor(Math.random() * ((colors.length - 1) - 0 + 1) + 0);
+  
+//   // Select the HTML body element
+//   const body = document.querySelector('body');
+
+//   // Set the background color to the randomly selected color
+//   body.style.backgroundColor = colors[randomIndex];
+// }
+
+// 10.  Build the contents of a table with JavaScript:
+//      -Add the following table structure to index.html. You are not permitted to edit this 
+//      table structure unless it is with JavaScript.
+
+//      -Using JavaScript, get a reference to the tbody element using document.querySelector() 
+//      passing it the right selector to target the tbody of the table and store it in a variable. Print 
+//      the value of the variable to the console to verify that you were able to get a reference to the expected 
+//      element.
+
+//      -Looping over the following array of objects (quizQuestions), add a table row for each object in 
+//      the array only populating the data that is in the header row provided.
+
+let quizQuestions = [
+  {
+      "id": 79680,
+      "answer": "anarchy",
+      "question": "In 1921 the black flag flew at the funeral of Peter Kropotkin, philosopher of this government-negating ideology",
+      "value": 1000,
+      "airdate": "2007-02-27T12:00:00.000Z",
+      "created_at": "2014-02-11T23:38:41.721Z",
+      "updated_at": "2014-02-11T23:38:41.721Z",
+      "category_id": 10459,
+      "game_id": null,
+      "invalid_count": null,
+      "category": {
+          "id": 10459,
+          "title": "political science",
+          "created_at": "2014-02-11T23:38:40.866Z",
+          "updated_at": "2014-02-11T23:38:40.866Z",
+          "clues_count": 5
+      }
+  },
+  {
+      "id": 79681,
+      "answer": "Africa",
+      "question": "In 2000 Rift Valley fever scared WHO by making its first appearance outside this continent",
+      "value": 1000,
+      "airdate": "2007-02-27T12:00:00.000Z",
+      "created_at": "2014-02-11T23:38:41.751Z",
+      "updated_at": "2014-02-11T23:38:41.751Z",
+      "category_id": 10460,
+      "game_id": null,
+      "invalid_count": null,
+      "category": {
+          "id": 10460,
+          "title": "who says",
+          "created_at": "2014-02-11T23:38:40.880Z",
+          "updated_at": "2014-02-11T23:38:40.880Z",
+          "clues_count": 5
+      }
+  },
+  {
+      "id": 79682,
+      "answer": "yew",
+      "question": "\"It had to be\" this evergreen tree that is a homonym for a second-person-singular pronoun",
+      "value": 1000,
+      "airdate": "2007-02-27T12:00:00.000Z",
+      "created_at": "2014-02-11T23:38:41.780Z",
+      "updated_at": "2014-02-11T23:38:41.780Z",
+      "category_id": 10461,
+      "game_id": null,
+      "invalid_count": null,
+      "category": {
+          "id": 10461,
+          "title": "also a 3-letter tree",
+          "created_at": "2014-02-11T23:38:40.895Z",
+          "updated_at": "2014-02-11T23:38:40.895Z",
+          "clues_count": 5
+      }
+  },
+  {
+      "id": 79683,
+      "answer": "Alvin Ailey",
+      "question": "In 1977 Madonna won a scholarship to the studio of this alliteratively named N.Y. choreographer",
+      "value": 1000,
+      "airdate": "2007-02-27T12:00:00.000Z",
+      "created_at": "2014-02-11T23:38:41.809Z",
+      "updated_at": "2014-02-11T23:38:41.809Z",
+      "category_id": 10462,
+      "game_id": null,
+      "invalid_count": null,
+      "category": {
+          "id": 10462,
+          "title": "prime madonna",
+          "created_at": "2014-02-11T23:38:40.909Z",
+          "updated_at": "2014-02-11T23:38:40.909Z",
+          "clues_count": 5
+      }
+  },
+  {
+      "id": 79684,
+      "answer": "Harry Potter",
+      "question": "(Cheryl of the Clue Crew has a new review from the zoo--the London Zoo in Regent's Park, London.)  At the zoo in Regent's Park this character first discovers his unusual powers when he talks to the snakes",
+      "value": 200,
+      "airdate": "2007-02-26T12:00:00.000Z",
+      "created_at": "2014-02-11T23:38:42.318Z",
+      "updated_at": "2014-02-11T23:38:42.318Z",
+      "category_id": 10463,
+      "game_id": null,
+      "invalid_count": null,
+      "category": {
+          "id": 10463,
+          "title": "literary london",
+          "created_at": "2014-02-11T23:38:42.190Z",
+          "updated_at": "2014-02-11T23:38:42.190Z",
+          "clues_count": 5
+      }
+  }
+]
+
+//  The result of the first iteration of the loop would add the following structure to the tbody and 
+//  repeat for each question in the array.
+    // <tr>
+    //     <td>79680</td>
+    //     <td>In 1921 the black flag flew at the funeral of Peter Kropotkin, philosopher of this government-negating ideology</td>
+    //     <td>political science</td>
+    //     <td>1000</td>
+    //     <td>anarchy</td>
+    // </tr>
