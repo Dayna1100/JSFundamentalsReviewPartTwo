@@ -541,103 +541,103 @@
 //      -Looping over the following array of objects (quizQuestions), add a table row for each object in 
 //      the array only populating the data that is in the header row provided.
 
-let quizQuestions = [
-  {
-      "id": 79680,
-      "answer": "anarchy",
-      "question": "In 1921 the black flag flew at the funeral of Peter Kropotkin, philosopher of this government-negating ideology",
-      "value": 1000,
-      "airdate": "2007-02-27T12:00:00.000Z",
-      "created_at": "2014-02-11T23:38:41.721Z",
-      "updated_at": "2014-02-11T23:38:41.721Z",
-      "category_id": 10459,
-      "game_id": null,
-      "invalid_count": null,
-      "category": {
-          "id": 10459,
-          "title": "political science",
-          "created_at": "2014-02-11T23:38:40.866Z",
-          "updated_at": "2014-02-11T23:38:40.866Z",
-          "clues_count": 5
-      }
-  },
-  {
-      "id": 79681,
-      "answer": "Africa",
-      "question": "In 2000 Rift Valley fever scared WHO by making its first appearance outside this continent",
-      "value": 1000,
-      "airdate": "2007-02-27T12:00:00.000Z",
-      "created_at": "2014-02-11T23:38:41.751Z",
-      "updated_at": "2014-02-11T23:38:41.751Z",
-      "category_id": 10460,
-      "game_id": null,
-      "invalid_count": null,
-      "category": {
-          "id": 10460,
-          "title": "who says",
-          "created_at": "2014-02-11T23:38:40.880Z",
-          "updated_at": "2014-02-11T23:38:40.880Z",
-          "clues_count": 5
-      }
-  },
-  {
-      "id": 79682,
-      "answer": "yew",
-      "question": "\"It had to be\" this evergreen tree that is a homonym for a second-person-singular pronoun",
-      "value": 1000,
-      "airdate": "2007-02-27T12:00:00.000Z",
-      "created_at": "2014-02-11T23:38:41.780Z",
-      "updated_at": "2014-02-11T23:38:41.780Z",
-      "category_id": 10461,
-      "game_id": null,
-      "invalid_count": null,
-      "category": {
-          "id": 10461,
-          "title": "also a 3-letter tree",
-          "created_at": "2014-02-11T23:38:40.895Z",
-          "updated_at": "2014-02-11T23:38:40.895Z",
-          "clues_count": 5
-      }
-  },
-  {
-      "id": 79683,
-      "answer": "Alvin Ailey",
-      "question": "In 1977 Madonna won a scholarship to the studio of this alliteratively named N.Y. choreographer",
-      "value": 1000,
-      "airdate": "2007-02-27T12:00:00.000Z",
-      "created_at": "2014-02-11T23:38:41.809Z",
-      "updated_at": "2014-02-11T23:38:41.809Z",
-      "category_id": 10462,
-      "game_id": null,
-      "invalid_count": null,
-      "category": {
-          "id": 10462,
-          "title": "prime madonna",
-          "created_at": "2014-02-11T23:38:40.909Z",
-          "updated_at": "2014-02-11T23:38:40.909Z",
-          "clues_count": 5
-      }
-  },
-  {
-      "id": 79684,
-      "answer": "Harry Potter",
-      "question": "(Cheryl of the Clue Crew has a new review from the zoo--the London Zoo in Regent's Park, London.)  At the zoo in Regent's Park this character first discovers his unusual powers when he talks to the snakes",
-      "value": 200,
-      "airdate": "2007-02-26T12:00:00.000Z",
-      "created_at": "2014-02-11T23:38:42.318Z",
-      "updated_at": "2014-02-11T23:38:42.318Z",
-      "category_id": 10463,
-      "game_id": null,
-      "invalid_count": null,
-      "category": {
-          "id": 10463,
-          "title": "literary london",
-          "created_at": "2014-02-11T23:38:42.190Z",
-          "updated_at": "2014-02-11T23:38:42.190Z",
-          "clues_count": 5
-      }
-  }
-]
+// let quizQuestions = [
+//   {
+//       "id": 79680,
+//       "answer": "anarchy",
+//       "question": "In 1921 the black flag flew at the funeral of Peter Kropotkin, philosopher of this government-negating ideology",
+//       "value": 1000,
+//       "airdate": "2007-02-27T12:00:00.000Z",
+//       "created_at": "2014-02-11T23:38:41.721Z",
+//       "updated_at": "2014-02-11T23:38:41.721Z",
+//       "category_id": 10459,
+//       "game_id": null,
+//       "invalid_count": null,
+//       "category": {
+//           "id": 10459,
+//           "title": "political science",
+//           "created_at": "2014-02-11T23:38:40.866Z",
+//           "updated_at": "2014-02-11T23:38:40.866Z",
+//           "clues_count": 5
+//       }
+//   },
+//   {
+//       "id": 79681,
+//       "answer": "Africa",
+//       "question": "In 2000 Rift Valley fever scared WHO by making its first appearance outside this continent",
+//       "value": 1000,
+//       "airdate": "2007-02-27T12:00:00.000Z",
+//       "created_at": "2014-02-11T23:38:41.751Z",
+//       "updated_at": "2014-02-11T23:38:41.751Z",
+//       "category_id": 10460,
+//       "game_id": null,
+//       "invalid_count": null,
+//       "category": {
+//           "id": 10460,
+//           "title": "who says",
+//           "created_at": "2014-02-11T23:38:40.880Z",
+//           "updated_at": "2014-02-11T23:38:40.880Z",
+//           "clues_count": 5
+//       }
+//   },
+//   {
+//       "id": 79682,
+//       "answer": "yew",
+//       "question": "\"It had to be\" this evergreen tree that is a homonym for a second-person-singular pronoun",
+//       "value": 1000,
+//       "airdate": "2007-02-27T12:00:00.000Z",
+//       "created_at": "2014-02-11T23:38:41.780Z",
+//       "updated_at": "2014-02-11T23:38:41.780Z",
+//       "category_id": 10461,
+//       "game_id": null,
+//       "invalid_count": null,
+//       "category": {
+//           "id": 10461,
+//           "title": "also a 3-letter tree",
+//           "created_at": "2014-02-11T23:38:40.895Z",
+//           "updated_at": "2014-02-11T23:38:40.895Z",
+//           "clues_count": 5
+//       }
+//   },
+//   {
+//       "id": 79683,
+//       "answer": "Alvin Ailey",
+//       "question": "In 1977 Madonna won a scholarship to the studio of this alliteratively named N.Y. choreographer",
+//       "value": 1000,
+//       "airdate": "2007-02-27T12:00:00.000Z",
+//       "created_at": "2014-02-11T23:38:41.809Z",
+//       "updated_at": "2014-02-11T23:38:41.809Z",
+//       "category_id": 10462,
+//       "game_id": null,
+//       "invalid_count": null,
+//       "category": {
+//           "id": 10462,
+//           "title": "prime madonna",
+//           "created_at": "2014-02-11T23:38:40.909Z",
+//           "updated_at": "2014-02-11T23:38:40.909Z",
+//           "clues_count": 5
+//       }
+//   },
+//   {
+//       "id": 79684,
+//       "answer": "Harry Potter",
+//       "question": "(Cheryl of the Clue Crew has a new review from the zoo--the London Zoo in Regent's Park, London.)  At the zoo in Regent's Park this character first discovers his unusual powers when he talks to the snakes",
+//       "value": 200,
+//       "airdate": "2007-02-26T12:00:00.000Z",
+//       "created_at": "2014-02-11T23:38:42.318Z",
+//       "updated_at": "2014-02-11T23:38:42.318Z",
+//       "category_id": 10463,
+//       "game_id": null,
+//       "invalid_count": null,
+//       "category": {
+//           "id": 10463,
+//           "title": "literary london",
+//           "created_at": "2014-02-11T23:38:42.190Z",
+//           "updated_at": "2014-02-11T23:38:42.190Z",
+//           "clues_count": 5
+//       }
+//   }
+// ]
 
 //  The result of the first iteration of the loop would add the following structure to the tbody and 
 //  repeat for each question in the array.
@@ -648,3 +648,20 @@ let quizQuestions = [
     //     <td>1000</td>
     //     <td>anarchy</td>
     // </tr>
+
+    //  SOLUTION 10 FROM TEACHER:
+    // const $tbody = document.querySelector("#quizQuestionsTable > tbody");
+    // console.log($tbody)
+
+    // for  (let quizQuestion of quizQuestions) {
+    //   const $tr = document.createElement("tr")
+    //   $tr.innerHTML = `
+    //   <td>${quizQuestion.id}</td>
+    //   <td>${quizQuestion.question}</td>
+    //   <td>${quizQuestion.category.title}</td>
+    //   <td>${quizQuestion.value}</td>
+    //   <td>${quizQuestion.answer}</td>
+    //   `
+    // $tbody.append($tr)
+    // }  
+ 
