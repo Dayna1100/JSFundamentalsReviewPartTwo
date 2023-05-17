@@ -476,7 +476,10 @@
 
 //    -Be sure to use event.preventDefault(); near the top of the event listener.
 //    -What behavior did adding event.preventDefault(); change?  - It prevents the event from happening - here it was a click
-//    but still lets the message print to the console.
+//    but still lets the message print to the console. 
+//    The preventDefault() method cancels the event if it is cancelable, meaning that the default action 
+//    that belongs to the event will not occur.
+//
 //    -Update the new event listener for the button to decrease the number in the span by one every time 
 //    the button is clicked.
 
